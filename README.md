@@ -10,8 +10,8 @@ of in Gitpod (gitpod is zonder mailen van orders en zonder permanent hosten):
 - * muziekinstrumeten*
 ### Deze webshop is gemaakt door: 
 - * Iris van der Zwart * 
--  * Julia *
--  * Serkan *
+-  * Julia Suijker*
+-  * Serkan Karan*
 
 # Mijn aanpak
 Werk de planning af van boven naar beneden<br>
