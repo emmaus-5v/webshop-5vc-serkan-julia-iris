@@ -7,7 +7,7 @@ of in Gitpod (gitpod is zonder mailen van orders en zonder permanent hosten):
 [Run on Gitpod](https://gitpod.io/#https://github.com/emmauscollege/5HV-webshop-template)
 
 ### In mijn webshop vind je: 
-- * muziekinstrumeten*
+- * muziekinstrumenten*
 ### Deze webshop is gemaakt door: 
 - * Iris van der Zwart * 
 -  * Julia Suijker*
