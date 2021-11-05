@@ -129,7 +129,7 @@ insert into merk (id, brand) values
 (2, 'Fender');
 
 insert into merk (id, brand) values
-(3, 'Ibanez)')
+(3, 'Ibanez')
 
 --
 -- category
