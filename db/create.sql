@@ -13,26 +13,26 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
-
+DROP TABLE IF EXISTS kleur; 
 CREATE TABLE kleur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   color VARCHAR(15)
 );
 
-
+DROP TABLE IF EXISTS productkleur; 
 CREATE TABLE productkleur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur_id NUMERIC(10),
   products_id NUMERIC(10)
 );
 
-
+DROP TABLE IF EXISTS merk; 
 CREATE TABLE merk (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   brand VARCHAR(15)
 );
 
-
+DROP TABLE IF EXISTS categorie; 
 CREATE TABLE categorie (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   category VARCHAR(15)
@@ -66,6 +66,7 @@ insert into products (id, name, description, kleuren_product_id, merk_id, catego
 
 insert into products (id, name, description, kleuren_product_id, merk_id, categorie_id, price) values 
 (6, 'Velvet Goldmine', 'Nam ultrices.', 1, 1, 1, 15);
+
 
 
 --
