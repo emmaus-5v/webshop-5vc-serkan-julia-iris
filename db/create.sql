@@ -61,8 +61,10 @@ insert into products (id, name, description, merk_id, categorie_id, price) value
   'De Lag Guitars OC70 uit de Occitania 70-serie is speciaal ontworpen voor beginners, onder toezicht van de ervaren luthier Maurice Dupont. Bij de ontwikkeling van deze klassieke gitaar waren speelgemak en een gebalanceerde klank de belangrijkste uitgangspunten. Daarom is er gekozen voor een massief bovenbladvan Engelmann sparren met zij en achterkanten van sapele. Dankzij de brede topkam van 51 millimeter kun je rekenen op een authentieke speelervaring. Bovendien blijft de gitaar goed op stemming door het gebruik van een zadel en brugkam van zwart grafiet. Het geheel is afgewerkt in zijdeglans (satin) voor een stijlvolle uitstraling. Dit is de linkshandige versie. ',
   1, 1, 226);
 
-insert into products (id, name, description, merk_id, categorie_id, price) values 
-(4, 'Aquí llega Condemor, el pecador de la pradera', 'Duis bibendum, ', 1, 1, 13.5);
+insert into products (id, name, description, kleuren_product_id, merk_id, categorie_id, price) values 
+(4, 'Fender Classic Design CD-140SCE Natural', 
+'Voor wie gelijk goed van start of er gewoon een leuk gitaar bij zoekt, biedt Fender de Classic Design serie. Deze CD-140SCE is een hoogwaardige, doch zeer vriendelijk geprijsde westerngitaar, met ingebouwd elementsysteem. De basis van deze gitaar wordt gevormd door de ovangkol achter- en zijkanten, die zorgen voor een warme klankprojectie. Het bovenblad is van massief sparren (spruce) en geeft de gehele klank extra helderheid mee. De mahonie hals met walnoothouten toets maken dit klankpallet verder compleet, resulterend in een mooi gebalanceerd klinkende gitaar. Ook de topkam mag er wezen, deze is van Graph Tech Nubone. ',
+ 1, 1, 1, 318.00);
 
 insert into products (id, name, description, merk_id, categorie_id, price) values 
 (5, 'Fender Justin Meldal-Johnsen Road Worn Mustang Bass FDB RW,',
@@ -100,3 +102,12 @@ insert into merk (id, brand) values
 --
 insert into categorie (id, category) values
 (1, 'gitaar');
+
+insert into categorie (id, category) values
+(2, 'piano');
+
+insert into categorie (id, category) values
+(3, 'basgitaar');
+
+insert into categorie (id, category) values
+(4, 'drumstel');
