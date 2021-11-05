@@ -64,7 +64,7 @@ insert into products (id, name, description, merk_id, categorie_id, price) value
 insert into products (id, name, description, merk_id, categorie_id, price) values 
 (4, 'Fender Classic Design CD-140SCE Natural', 
   'Voor wie gelijk goed van start of er gewoon een leuk gitaar bij zoekt, biedt Fender de Classic Design serie. Deze CD-140SCE is een hoogwaardige, doch zeer vriendelijk geprijsde westerngitaar, met ingebouwd elementsysteem. De basis van deze gitaar wordt gevormd door de ovangkol achter- en zijkanten, die zorgen voor een warme klankprojectie. Het bovenblad is van massief sparren (spruce) en geeft de gehele klank extra helderheid mee. De mahonie hals met walnoothouten toets maken dit klankpallet verder compleet, resulterend in een mooi gebalanceerd klinkende gitaar. Ook de topkam mag er wezen, deze is van Graph Tech Nubone. ',
-  2, 1, 318);
+  2, 1, 299);
 
  insert into products (id, name, description, merk_id, categorie_id, price) values 
 (5, 'Fender Classic Design CN-60S Black ', 
@@ -124,10 +124,12 @@ insert into productkleur (id, kleur_id, products_id) values
 --
 insert into merk (id, brand) values
 (1, 'LAG Guitars');
+
+insert into merk (id, brand) values
 (2, 'Fender');
-(3, 'Ibanez)');
 
-
+insert into merk (id, brand) values
+(3, 'Ibanez)')
 
 --
 -- category
