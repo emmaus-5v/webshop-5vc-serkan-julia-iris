@@ -66,6 +66,7 @@ insert into products (id, name, description, kleuren_product_id, merk_id, catego
 (6, 'Velvet Goldmine', 'Nam ultrices.', 1, 1, 1, 15);
 
 
+
 --
 -- kleuren
 --
