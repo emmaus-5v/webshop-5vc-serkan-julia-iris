@@ -97,9 +97,9 @@ insert into products (id, name, description, merk_id, categorie_id, price) value
 4, 2, 265.00);
 
 insert into products (id, name, description, merk_id, categorie_id, price) values 
-(11, 'Casio Celviano AP-470 BK digitale piano zwart'
-'De Casio Celviano AP-470 is een zeer complete digitale piano met een stak vormgegeven behuizing. Een belangrijk onderdeel van de Casio Celviano AP-470 is de AiR Sound Source-klankbron. Hierin zitten 22 klanken, waaronder 2 vleugels, elektrische pianos en orgels. Door dit combineren met effecten als String Resonance, Damper Resonance, Lid Simulator en Hall Simulator, kun je de AP-470 laten klinken als een vleugel in een concertzaal of als jazz-piano in een kleine club. Met het Tri-sensor Sensor Sacle Hammer Action Keyboard II-klavier heb je dezelfde terugslag en hetzelfde speelgevoel, als op een akoestische vleugel. De meegeleverde 3 pedalen maken het akoestische piano-gevoel compleet. Dit is de zwarte variant.'
-5, 2, 975.00)
+(11, 'Casio Celviano AP-470 BK digitale piano zwart',
+'De Casio Celviano AP-470 is een zeer complete digitale piano met een stak vormgegeven behuizing. Een belangrijk onderdeel van de Casio Celviano AP-470 is de AiR Sound Source-klankbron. Hierin zitten 22 klanken, waaronder 2 vleugels, elektrische pianos en orgels. Door dit combineren met effecten als String Resonance, Damper Resonance, Lid Simulator en Hall Simulator, kun je de AP-470 laten klinken als een vleugel in een concertzaal of als jazz-piano in een kleine club. Met het Tri-sensor Sensor Sacle Hammer Action Keyboard II-klavier heb je dezelfde terugslag en hetzelfde speelgevoel, als op een akoestische vleugel. De meegeleverde 3 pedalen maken het akoestische piano-gevoel compleet. Dit is de zwarte variant.',
+5, 2, 975.00);
 
 insert into products (id, name, description, merk_id, categorie_id, price) values 
 (12, 'Casio Celviano AP-270BK digitale piano zwart',
@@ -129,16 +129,16 @@ insert into merk (id, brand) values
 (2, 'Fender');
 
 insert into merk (id, brand) values
-(3, 'Ibanez')
+(3, 'Ibanez');
 
 insert into merk (id, brand) values
-(4, 'Fazley')
+(4, 'Fazley');
 
 insert into merk (id, brand) values
-(5, 'Casio')
+(5, 'Casio');
 
 insert into merk (id, brand) values
-(6, 'Tama')
+(6, 'Tama');
 
 --
 -- categorie
