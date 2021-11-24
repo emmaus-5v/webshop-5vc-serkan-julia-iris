@@ -96,7 +96,7 @@ insert into products (id, name, description, merk_id, categorie_id, prijs) value
 'De FSP-500 is een fraai instapmodel digitale piano, maar dan wel een met 88 Hammer Action-toetsen. Zo wordt de weerstand van het klavier van een akoestische piano nagebootst. Dat betekent dat je op dezelfde manier kunt spelen. Je kunt spelen met 16 klanken, waaronder een fraai vleugelgeluid, elektrische pianos, orgels en strijkers. Je kunt deze geluiden snel kiezen via de overzichtelijk knoppenindeling op de compacte behuizing. Bij de piano krijg je een sustainpedaal geleverd, maar je kunt ook een los verkrijgbaar onderstel aanschaffen, waarop je dan gelijk drie pedalen vindt. De FSP-500-BK is de zwarte versie.',
 4, 2, 265.00);
 
-insert into products (id, name, description, merk_id, categorie_id, price) values 
+insert into products (id, name, description, merk_id, categorie_id, prijs) values 
 (11, 'Casio Celviano AP-470 BK digitale piano zwart',
 'De Casio Celviano AP-470 is een zeer complete digitale piano met een stak vormgegeven behuizing. Een belangrijk onderdeel van de Casio Celviano AP-470 is de AiR Sound Source-klankbron. Hierin zitten 22 klanken, waaronder 2 vleugels, elektrische pianos en orgels. Door dit combineren met effecten als String Resonance, Damper Resonance, Lid Simulator en Hall Simulator, kun je de AP-470 laten klinken als een vleugel in een concertzaal of als jazz-piano in een kleine club. Met het Tri-sensor Sensor Sacle Hammer Action Keyboard II-klavier heb je dezelfde terugslag en hetzelfde speelgevoel, als op een akoestische vleugel. De meegeleverde 3 pedalen maken het akoestische piano-gevoel compleet. Dit is de zwarte variant.',
 5, 2, 975.00);
