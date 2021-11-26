@@ -70,10 +70,10 @@ function getProducts(request, response) {
   const category_id = parseInt(request.query.category)
   let data = []
   if (category_id > 0) {
-    const sqlOpdracht = db.prepare('SELECT * FROM products JOIN merk ON merk.id = products.merk_id JOIN categorie ON categorie.id = products.categorie_id WHERE category_id = ? ORDER BY name ASC')
+    const sqlOpdracht = db.prepare('SELECT * FROM products JOIN merk ON merk.m_id = products.merk_id JOIN categorie ON categorie.c_id = products.categorie_id WHERE category_id = ? ORDER BY name ASC')
     data = sqlOpdracht.all(category_id)
   } else {
-    const sqlOpdracht = db.prepare('SELECT * FROM products JOIN merk ON merk.id = products.merk_id JOIN categorie ON categorie.id = products.categorie_id ORDER BY name ASC;')
+    const sqlOpdracht = db.prepare('SELECT * FROM products JOIN merk ON merk.m_id = products.merk_id JOIN categorie ON categorie.c_id = products.categorie_id ORDER BY name ASC;')
     data = sqlOpdracht.all()
   }
   // console.log(JSON.stringify(data, null, 2))

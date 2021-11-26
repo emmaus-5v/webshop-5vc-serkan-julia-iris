@@ -42,7 +42,7 @@ stap TODO:
 - [ ] winkelwagen aanpassen met id's
 - [ ] plaatjes fixen
 - [ ] mail fixen 
-- [ ]query kleuren fixen
+- [ ] query kleuren fixen
 - [ ] filters maken
 - [ ] kijken of als je op terug klikt de winkelwagen behouden kan worden
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
