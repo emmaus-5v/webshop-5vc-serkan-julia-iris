@@ -197,6 +197,12 @@ for a "Simple inventory list example with crud using : NodeJS, express framework
 - Robert Bakker [Notalifeform](https://www.gihub.com/Notalifeform)<br>
 for help almost 24x7 with many questions and problems and providing basic shop called gitpodnode to be further developed by students on gitpod and deplyed freely on heroku. See https://gitpod.io/#https://github.com/Notalifeform/gitpodnode
 
+# To do 
+- plaatjes werken niet? <br>
+- Winkelmandje is altijd leeg op hoofdpagina<br>
+- meer dan alleen id zichtbaar in winkelmandje<br>
+- totaal bedrag winkelmand moet aangepast worden als er iets word verwijdert<br>
+- naam winkel wijzigen?<br>
 
 
 
