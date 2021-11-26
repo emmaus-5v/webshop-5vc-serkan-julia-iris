@@ -199,7 +199,6 @@ for help almost 24x7 with many questions and problems and providing basic shop c
 
 # To do 
 - plaatjes werken niet? <br>
-- Winkelmandje is altijd leeg op hoofdpagina<br>
 - meer dan alleen id zichtbaar in winkelmandje<br>
 - totaal bedrag winkelmand moet aangepast worden als er iets word verwijdert<br>
 - naam winkel wijzigen?<br>
