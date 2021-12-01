@@ -109,19 +109,19 @@ insert into products (id, name, description, merk_id, categorie_id, price) value
 --
 -- kleuren
 --
-insert into kleur (id, color) values
+insert into kleur (k_id, color) values
 (1, 'hout');
 
-insert into kleur (id, color) values
+insert into kleur (k_id, color) values
 (2, 'naturel');
 
-insert into kleur (id, color) values
+insert into kleur (k_id, color) values
 (3, 'zwart');
 
-insert into kleur (id, color) values
+insert into kleur (k_id, color) values
 (4, 'blauw');
 
-insert into kleur (id, color) values
+insert into kleur (k_id, color) values
 (5, 'roze');
 --
 -- kleuren van de producten
