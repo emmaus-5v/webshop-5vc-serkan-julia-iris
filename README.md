@@ -36,6 +36,15 @@ Stap 4: Website aanpassen
 
 Stap x: Webshop verder verbeteren
 - [ ] Herhaal stap 2 t/m 4 om je webshop verder te verbeteren. 
+
+stap TODO:
+- [ ] query aanpassen zodat id's niet meer overlopen dmv AS
+- [ ] winkelwagen aanpassen met id's
+- [ ] plaatjes fixen
+- [ ] mail fixen 
+- [ ] query kleuren fixen
+- [ ] filters maken
+- [ ] kijken of als je op terug klikt de winkelwagen behouden kan worden
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
 
 
@@ -197,6 +206,11 @@ for a "Simple inventory list example with crud using : NodeJS, express framework
 - Robert Bakker [Notalifeform](https://www.gihub.com/Notalifeform)<br>
 for help almost 24x7 with many questions and problems and providing basic shop called gitpodnode to be further developed by students on gitpod and deplyed freely on heroku. See https://gitpod.io/#https://github.com/Notalifeform/gitpodnode
 
+# To do 
+- plaatjes werken niet? <br>
+- meer dan alleen id zichtbaar in winkelmandje<br>
+- totaal bedrag winkelmand moet aangepast worden als er iets word verwijdert<br>
+- naam winkel wijzigen?<br>
 
 
 

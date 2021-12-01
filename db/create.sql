@@ -14,26 +14,26 @@ CREATE TABLE products (
 
 DROP TABLE IF EXISTS kleur; 
 CREATE TABLE kleur (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  k_id INTEGER PRIMARY KEY AUTOINCREMENT,
   color VARCHAR(15)
 );
 
 DROP TABLE IF EXISTS productkleur; 
 CREATE TABLE productkleur (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  pk_id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur_id NUMERIC(10),
   products_id NUMERIC(10)
 );
 
 DROP TABLE IF EXISTS merk; 
 CREATE TABLE merk (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  m_id INTEGER PRIMARY KEY AUTOINCREMENT,
   brand VARCHAR(15)
 );
 
 DROP TABLE IF EXISTS categorie; 
 CREATE TABLE categorie (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  c_id INTEGER PRIMARY KEY AUTOINCREMENT,
   category VARCHAR(15)
 );
 
@@ -117,7 +117,7 @@ insert into kleur (id, color) values
 --
 -- kleuren van de producten
 --
-insert into productkleur (id, kleur_id, products_id) values
+insert into productkleur (pk_id, kleur_id, products_id) values
 (1, 1, 1);
 
 insert into productkleur (id, kleur_id, products_id) values
@@ -128,37 +128,37 @@ insert into productkleur (id, kleur_id, products_id) values
 --
 -- brand
 --
-insert into merk (id, brand) values
+insert into merk (m_id, brand) values
 (1, 'LAG Guitars');
 
-insert into merk (id, brand) values
+insert into merk (m_id, brand) values
 (2, 'Fender');
 
-insert into merk (id, brand) values
+insert into merk (m_id, brand) values
 (3, 'Ibanez');
 
-insert into merk (id, brand) values
+insert into merk (m_id, brand) values
 (4, 'Fazley');
 
-insert into merk (id, brand) values
+insert into merk (m_id, brand) values
 (5, 'Casio');
 
-insert into merk (id, brand) values
+insert into merk (m_id, brand) values
 (6, 'Tama');
 
 --
 -- categorie
 --
-insert into categorie (id, category) values
+insert into categorie (c_id, category) values
 (1, 'gitaar');
 
-insert into categorie (id, category) values
+insert into categorie (c_id, category) values
 (2, 'piano');
 
-insert into categorie (id, category) values
+insert into categorie (c_id, category) values
 (3, 'basgitaar');
 
-insert into categorie (id, category) values
+insert into categorie (c_id, category) values
 (4, 'drumstel');
 
 
