@@ -114,21 +114,61 @@ insert into kleur (id, color) values
 
 insert into kleur (id, color) values
 (2, 'naturel');
+
+insert into kleur (id, color) values
+(3, 'zwart');
+
+insert into kleur (id, color) values
+(4, 'blauw');
+
+insert into kleur (id, color) values
+(5, 'roze');
 --
 -- kleuren van de producten
 --
+//1
 insert into productkleur (pk_id, kleur_id, products_id) values
 (1, 1, 1);
 
 insert into productkleur (pk_id, kleur_id, products_id) values
 (2, 2, 1);
 
+//2
 insert into productkleur (id, kleur_id, products_id) values
 (3, 1, 2);
 
+insert into productkleur (id, kleur_id, products_id) values
+(3, 2, 2);
 
+//3
 insert into productkleur (id, kleur_id, products_id) values
 (4, 1, 3);
+
+insert into productkleur (id, kleur_id, products_id) values
+(5, 2, 3);
+
+//4
+insert into productkleur (id, kleur_id, products_id) values
+(6, 1, 4);
+
+insert into productkleur (id, kleur_id, products_id) values
+(7, 2, 4);
+
+//5
+insert into productkleur (id, kleur_id, products_id) values
+(8, 3, 5);
+
+//6
+insert into productkleur (id, kleur_id, products_id) values
+(9, 4, 6);
+
+//7
+insert into productkleur (id, kleur_id, products_id) values
+(10, 5, 7);
+
+//8
+insert into productkleur (id, kleur_id, products_id) values
+(11, 4, 8);
 --
 -- brand
 --
