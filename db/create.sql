@@ -123,6 +123,8 @@ insert into kleur (k_id, color) values
 
 insert into kleur (k_id, color) values
 (5, 'roze');
+
+
 --
 -- kleuren van de producten
 --
@@ -186,6 +188,8 @@ insert into productkleur (pk_id, kleur_id, products_id) values
 -- 12
 insert into productkleur (pk_id, kleur_id, products_id) values
 (16, 3, 12);
+
+
 --
 -- brand
 --
