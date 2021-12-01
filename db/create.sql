@@ -72,7 +72,7 @@ insert into products (id, name, description, merk_id, categorie_id, price) value
   2, 1, 189);
 
 insert into products (id, name, description, merk_id, categorie_id, price) values 
-(6, 'Fender Justin Meldal-Johnsen Road Worn Mustang Bass FDB RW,',
+(6, 'Fender Justin Meldal-Johnsen Road Worn Mustang Bass FDB RW',
  'Oplettende muzikanten zullen Justin Meldal-Johnsen geheid kennen als bassist van acts zoals Beck en Nine Inch Nails. Ook wordt hij geregeld ingezet als muzikant, geluidstechnicus en/of co-producer in de studio bij artiesten als Paramore en Jimmy Eat World. Daarnaast heeft hij meegeschreven aan songs van onder andere Macy Gray en M83. Toch is hij vooral een veelgevraagd live- en sessie-bassist. Deze Fender Mustang Bass is gemodeleerd naar zijn favoriete offset shortscale bas uit 1967. Dit signature exemplaar heeft een Faded Daphne Blue laklaag met een vintage ogende Road Worn afwerking. Deze stevig ingespeelde look maakt gelijk duidelijk dat je hier met een basgitaar te maken hebt, die als een geschikt werkpaard zal dienen voor de eigenzinnig bassist.',
   2, 3, 1219);
 
@@ -114,21 +114,61 @@ insert into kleur (id, color) values
 
 insert into kleur (id, color) values
 (2, 'naturel');
+
+insert into kleur (id, color) values
+(3, 'zwart');
+
+insert into kleur (id, color) values
+(4, 'blauw');
+
+insert into kleur (id, color) values
+(5, 'roze');
 --
 -- kleuren van de producten
 --
+//1
 insert into productkleur (pk_id, kleur_id, products_id) values
 (1, 1, 1);
 
 insert into productkleur (pk_id, kleur_id, products_id) values
 (2, 2, 1);
 
+//2
 insert into productkleur (id, kleur_id, products_id) values
 (3, 1, 2);
 
+insert into productkleur (id, kleur_id, products_id) values
+(3, 2, 2);
 
+//3
 insert into productkleur (id, kleur_id, products_id) values
 (4, 1, 3);
+
+insert into productkleur (id, kleur_id, products_id) values
+(5, 2, 3);
+
+//4
+insert into productkleur (id, kleur_id, products_id) values
+(6, 1, 4);
+
+insert into productkleur (id, kleur_id, products_id) values
+(7, 2, 4);
+
+//5
+insert into productkleur (id, kleur_id, products_id) values
+(8, 3, 5);
+
+//6
+insert into productkleur (id, kleur_id, products_id) values
+(9, 4, 6);
+
+//7
+insert into productkleur (id, kleur_id, products_id) values
+(10, 5, 7);
+
+//8
+insert into productkleur (id, kleur_id, products_id) values
+(11, 4, 8);
 --
 -- brand
 --
