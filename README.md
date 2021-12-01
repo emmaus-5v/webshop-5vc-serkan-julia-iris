@@ -36,6 +36,15 @@ Stap 4: Website aanpassen
 
 Stap x: Webshop verder verbeteren
 - [ ] Herhaal stap 2 t/m 4 om je webshop verder te verbeteren. 
+
+stap TODO:
+- [ ] query aanpassen zodat id's niet meer overlopen dmv AS
+- [ ] winkelwagen aanpassen met id's
+- [ ] plaatjes fixen
+- [ ] mail fixen 
+- [ ] query kleuren fixen
+- [ ] filters maken
+- [ ] kijken of als je op terug klikt de winkelwagen behouden kan worden
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
 
 
