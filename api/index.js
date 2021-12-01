@@ -75,6 +75,16 @@ function getProductKleur(request, response) {
   console.log('API verstuurt /api/ProductKleur/')
 }
 
+function getProductKleur(request, response) {
+  console.log('API ontvangt /api/ProductKleur/:id/?', request.query)
+
+  let data = []
+  const product_id = parseInt(request.params.id)
+  const sqlOpdracht = db.prepare('SELECT * FROM productkleur Join kleur ON kleur.k_id = productkleur.kleur_id ORDER BY pk_id')
+  data = sqlOpdracht.all(product_id)
+  response.status(200).json(data[0])
+}
+
 function getProducts(request, response) {
   console.log('API ontvangt /api/products/?', request.query)
 
