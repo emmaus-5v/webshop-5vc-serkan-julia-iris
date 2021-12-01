@@ -62,17 +62,17 @@ function getCategories(request, response) {
   const data = sqlOpdracht.all()
   // console.log(JSON.stringify(data, null, 2))
   response.status(200).send(data)
-  console.log('API verstuurt /api/ProductKleur/')
+  console.log('API verstuurt /api/categories/')
 }
 
 function getProductKleur(request, response) {
-  console.log('API ontvangt /api/categories/')
+  console.log('API ontvangt /api/ProductKleur/')
   // TODO: change query to make it return categories
-  const sqlOpdracht = db.prepare('SELECT * FROM products ORDER BY id ASC')
+  const sqlOpdracht = db.prepare('SELECT * FROM productkleur Join kleur ON kleur.k_id = productkleur.kleur_id ORDER BY pk_id')
   const data = sqlOpdracht.all()
   // console.log(JSON.stringify(data, null, 2))
   response.status(200).send(data)
-  console.log('API verstuurt /api/categories/')
+  console.log('API verstuurt /api/ProductKleur/')
 }
 
 function getProducts(request, response) {
