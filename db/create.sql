@@ -113,18 +113,22 @@ insert into kleur (id, color) values
 (1, 'hout');
 
 insert into kleur (id, color) values
-(1, 'naturel');
+(2, 'naturel');
 --
 -- kleuren van de producten
 --
 insert into productkleur (pk_id, kleur_id, products_id) values
 (1, 1, 1);
 
-insert into productkleur (id, kleur_id, products_id) values
-(2, 1, 2);
+insert into productkleur (pk_id, kleur_id, products_id) values
+(2, 2, 1);
 
 insert into productkleur (id, kleur_id, products_id) values
-(3, 1, 3);
+(3, 1, 2);
+
+
+insert into productkleur (id, kleur_id, products_id) values
+(4, 1, 3);
 --
 -- brand
 --
