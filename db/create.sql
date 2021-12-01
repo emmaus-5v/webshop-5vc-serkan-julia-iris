@@ -169,6 +169,23 @@ insert into productkleur (pk_id, kleur_id, products_id) values
 -- 8
 insert into productkleur (pk_id, kleur_id, products_id) values
 (12, 4, 8);
+
+-- 9
+insert into productkleur (pk_id, kleur_id, products_id) values
+(13, 3, 9);
+
+
+-- 10
+insert into productkleur (pk_id, kleur_id, products_id) values
+(14, 3, 10);
+
+-- 11
+insert into productkleur (pk_id, kleur_id, products_id) values
+(15, 3, 11);
+
+-- 12
+insert into productkleur (pk_id, kleur_id, products_id) values
+(16, 3, 12);
 --
 -- brand
 --
