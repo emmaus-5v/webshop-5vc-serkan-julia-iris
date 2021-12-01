@@ -27,6 +27,7 @@ app.use(express.static('../web'))
 // definieer startpunten voor de API-server
 app.get('/api/echo', echoRequest)
 app.get('/api/categories', getCategories)
+app.get('/api/ProductKleur', getProductKleur)
 app.get('/api/products', getProducts)
 app.get('/api/products/:id', getProductById)
 //app.get('/api/products/:id/related', db.getRelatedProductsById)
@@ -55,6 +56,16 @@ function echoRequest(request, response) {
 }
 
 function getCategories(request, response) {
+  console.log('API ontvangt /api/categories/')
+  // TODO: change query to make it return categories
+  const sqlOpdracht = db.prepare('SELECT * FROM products ORDER BY id ASC')
+  const data = sqlOpdracht.all()
+  // console.log(JSON.stringify(data, null, 2))
+  response.status(200).send(data)
+  console.log('API verstuurt /api/ProductKleur/')
+}
+
+function getProductKleur(request, response) {
   console.log('API ontvangt /api/categories/')
   // TODO: change query to make it return categories
   const sqlOpdracht = db.prepare('SELECT * FROM products ORDER BY id ASC')
