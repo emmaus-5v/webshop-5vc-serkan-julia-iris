@@ -38,9 +38,9 @@ Stap x: Webshop verder verbeteren
 - [ ] Herhaal stap 2 t/m 4 om je webshop verder te verbeteren. 
 
 stap TODO:
-- [ ] query aanpassen zodat id's niet meer overlopen dmv AS
+- [x] query aanpassen zodat id's niet meer overlopen dmv AS
 - [ ] winkelwagen aanpassen met id's
-- [ ] plaatjes fixen
+- [x] plaatjes fixen
 - [ ] mail fixen 
 - [ ] query kleuren fixen
 - [ ] filters maken
