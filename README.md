@@ -46,6 +46,7 @@ stap TODO:
 - [ ] filters maken
 - [ ] kijken of als je op terug klikt de winkelwagen behouden kan worden
 - [ ] meer dan alleen id in winkelmand
+- [ ] naam winkel wijzigen?
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
 
 
@@ -207,8 +208,6 @@ for a "Simple inventory list example with crud using : NodeJS, express framework
 - Robert Bakker [Notalifeform](https://www.gihub.com/Notalifeform)<br>
 for help almost 24x7 with many questions and problems and providing basic shop called gitpodnode to be further developed by students on gitpod and deplyed freely on heroku. See https://gitpod.io/#https://github.com/Notalifeform/gitpodnode
 
-# To do 
-- naam winkel wijzigen?<br>
 
 
 
