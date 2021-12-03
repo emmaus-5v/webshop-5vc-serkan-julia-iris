@@ -46,6 +46,10 @@ CREATE TABLE categorie (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
+--
+-- Main product tabel
+--
+
 insert into products (id, name, description, merk_id, categorie_id, price) values 
 (1, 'LAG Guitars Tramontane Nylon 270 TN270ACE E/A klassieke gitaar met auditorium body en smalle hals', 
   'De Lag Guitars TN270ACE mag met recht een van de topmodellen uit de Tramontane Nylon-serie worden genoemd. Deze elektrisch-akoestische klassieke gitaar heeft namelijk een comfortabele auditorium body, waarbij is gekozen voor luxe toonhoutsoorten. Zo is het bovenblad vervaardigd van AA Engelmann sparrenhout, waaardoor je kunt rekenen op een volwassen klank met een duidelijk aanwezige midrange. Het ook wil natuurlijk ook wat, daarom is de achterzijde gemaakt van Mexicaans snakewood. Deze exotische hardhoutsoort ziet er niet alleen spectaculair uit, het draagt ook bij de rijke en gebalanceerde klank. ',
