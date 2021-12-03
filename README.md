@@ -45,9 +45,8 @@ stap TODO:
 - [ ] query kleuren fixen
 - [ ] filters maken
 - [X] kijken of als je op terug klikt de winkelwagen behouden kan worden
--> als je weer verder gaat met het pijltje komt de winkelwagen weer terug
-- [ ] meer dan alleen id in winkelmand
 - [ ] naam winkel wijzigen?
+
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
 
 
