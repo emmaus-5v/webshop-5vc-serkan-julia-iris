@@ -1,8 +1,10 @@
 /* all pages */
+html {
+  background-image: url("../images/achtergrond23.jpg") ;
+}
 body {
-    background-image: url("web.images.achtergrond23.jpg") ;
-    background-color: rgb(212, 245, 255);
-  
+
+    background-color:rgba(255,255,255,50%);
   
 }
 footer {
