@@ -27,7 +27,7 @@ app.use(express.static('../web'))
 // definieer startpunten voor de API-server
 app.get('/api/echo', echoRequest)
 app.get('/api/categories', getCategories)
-app.get('/api/ProductKleur', getProductKleur)
+app.get('/api/ProductKleur/:pk_id', getProductKleur)
 app.get('/api/products', getProducts)
 app.get('/api/products/:id', getProductById)
 //app.get('/api/products/:id/related', db.getRelatedProductsById)
@@ -65,25 +65,17 @@ function getCategories(request, response) {
   console.log('API verstuurt /api/categories/')
 }
 
-function getProductKleur(request, response) {
-  console.log('API ontvangt /api/ProductKleur/')
-  // TODO: change query to make it return categories
-  const sqlOpdracht = db.prepare('SELECT * FROM productkleur Join kleur ON kleur.k_id = productkleur.kleur_id ORDER BY pk_id')
-  const data = sqlOpdracht.all()
-  // console.log(JSON.stringify(data, null, 2))
-  response.status(200).send(data)
-  console.log('API verstuurt /api/ProductKleur/')
-}
 
 function getProductKleur(request, response) {
-  console.log('API ontvangt /api/ProductKleur/:id/?', request.query)
+  console.log('API ontvangt /api/ProductKleur/:pk_id/?', request.query)
 
   let data = []
-  const product_id = parseInt(request.params.id)
-  const sqlOpdracht = db.prepare('SELECT * FROM productkleur Join kleur ON kleur.k_id = productkleur.kleur_id ORDER BY pk_id')
-  data = sqlOpdracht.all(product_id)
+  const productkleur_id = parseInt(request.params.pk_id)
+  const sqlOpdracht = db.prepare('SELECT * FROM productkleur Join kleur ON kleur.k_id = productkleur.kleur_id WHERE pk_id = ? ORDER BY pk_id')
+  data = sqlOpdracht.all(productkleur_id)
   response.status(200).json(data[0])
 }
+
 
 function getProducts(request, response) {
   console.log('API ontvangt /api/products/?', request.query)
