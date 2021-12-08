@@ -45,8 +45,8 @@ stap TODO:
 - [X] query kleuren fixen
 - [ ] filters maken
 - [X] kijken of als je op terug klikt de winkelwagen behouden kan worden
-- [ ] naam winkel wijzigen?
-- [ ] bedankt voor je bestelling bericht
+- [X] naam winkel wijzigen?
+- [ ] bedankt voor je bestelling bericht (bestaat, kan pas gecheckt worden of het werkt nadat de mail gefixt is)
 
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
 
