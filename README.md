@@ -29,7 +29,7 @@ Tip: je kunt een multipliciteitendiagram gebruiken als tussenstap voor je databa
 - [x] Voeg eventueel plaatjes toe (web/images map)
 
 Stap 3: API aanpassen 
-- [ ] Pas de API aan, zodat je alle informatie uit je database kunt opvragen via de API
+- [X] Pas de API aan, zodat je alle informatie uit je database kunt opvragen via de API
 
 Stap 4: Website aanpassen 
 - [ ] Pas de website aan, zodat alle informatie getoond wordt.
@@ -42,7 +42,7 @@ stap TODO:
 - [ ] winkelwagen aanpassen met id's
 - [x] plaatjes fixen
 - [ ] mail fixen 
-- [ ] query kleuren fixen
+- [X] query kleuren fixen
 - [ ] filters maken
 - [X] kijken of als je op terug klikt de winkelwagen behouden kan worden
 - [ ] naam winkel wijzigen?
