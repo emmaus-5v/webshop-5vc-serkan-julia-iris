@@ -46,6 +46,7 @@ stap TODO:
 - [ ] filters maken
 - [X] kijken of als je op terug klikt de winkelwagen behouden kan worden
 - [ ] naam winkel wijzigen?
+- [ ] bedankt voor je bestelling bericht
 
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
 
