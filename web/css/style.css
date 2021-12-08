@@ -1,6 +1,9 @@
 /* all pages */
 body {
-  background-color: rgb(212, 245, 255);
+    background-image: url("achtergrond23.jpg") ;
+    background-color: rgb(212, 245, 255);
+  
+  
 }
 footer {
   margin: 20px;
