@@ -57,7 +57,7 @@
               <input class="product_totalAmount" name="productAmounts" value="9" type="hidden">
               <button class="btn btn-outline-dark shop-button" onClick="addAmountClosestToBasket(this, '.product_amount_show')">+</button>
               <button class="btn btn-outline-dark shop-button" onClick="removeAmountClosestFromBasket(this, '.product_amount_show')">-</button>
-              <button class="btn btn-outline-dark shop-button" onClick="if(confirm('Verwijder product?')) { removeClosestCompletelyFromBasket(this); setIfEmptyMsg() }">🗑</button>
+              <button class="btn btn-outline-dark shop-button" onClick="if(confirm('Dit product verwijderen?')) { removeClosestCompletelyFromBasket(this); setIfEmptyMsg() }">🗑</button>
             </div>
           </div>
           </template>
