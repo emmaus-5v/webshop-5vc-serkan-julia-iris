@@ -7,6 +7,9 @@ body {
     background-color:rgba(255,255,255,50%);
   
 }
+
+
+
 footer {
   margin: 20px;
   font-size: 12px;
@@ -68,6 +71,10 @@ footer {
   width: 80px
 }
 
+.introductie{
+  background-color: rgba(229,220,202,75%);
+}
+  
 /* basket page */
 .product-properties {
   margin-top:20px;
