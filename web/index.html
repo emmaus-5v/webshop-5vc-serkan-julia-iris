@@ -59,6 +59,7 @@
 					<p class="product_description card-text"></p>
 					<ul class="product-properties">
 						<li><span class="propert-name">merk: </span><span class="product_merk"></span></li>
+						<li><span class="propert-name">kleur: </span><span class="productkleur_kleur"></span></li>
 						<li><span class="propert-name">categorie: </span><span class="product_categorie"></span></li>
 						<li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
 					</ul>
@@ -93,7 +94,8 @@
         // laad producten
         // de functie showProducts wordt aangeroepen als er antwoord van de API is
         var request = new XMLHttpRequest()
-        request.open('GET', '/api/products', true) 
+        request.open('GET', '/api/products', '/api/productkleur/:pk_id', true)
+		
 		
 	
         request.onload = showProducts 
@@ -101,16 +103,16 @@
 
       })();
 
-	/*
-	  function showKleuren(){
+	
+	 /* function showKleuren(){
 		console.log("showKleuren called");
-		for (let row in data){
-		 const product = data[row]
-		 var kleur = kleur.color.substr(0, 35)
-              if(productkleur.products_id = products.id) {
-                
-		}
-
+		var data = JSON.parse(this.response)
+		for (let row in data) { // herhaal voor elke product
+         const productkleur = data[row]
+         for (var i = 0, im = productkleur.length; im > i; i++) {
+   			 clone.querySelector(".productkleur_kleur").textContent = productkleur[i];
+		     }
+	    }
 	  }
 	*/
 
@@ -141,6 +143,7 @@
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
               clone.querySelector(".product_merk").textContent = product.brand
 			  clone.querySelector(".product_categorie").textContent = product.category
+			  //showKleuren()
               clone.querySelector(".product_id").value = product.id
               clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
               clone.querySelector(".product_image").src =`/images/${product.id}.jpg`

@@ -74,6 +74,7 @@ function getProductKleur(request, response) {
   const sqlOpdracht = db.prepare('SELECT * FROM productkleur Join kleur ON kleur.k_id = productkleur.kleur_id WHERE pk_id = ? ORDER BY pk_id')
   data = sqlOpdracht.all(productkleur_id)
   response.status(200).send(data)
+  console.log('API verstuurt /api/productkleur/')
 }
 
 
