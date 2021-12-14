@@ -73,7 +73,7 @@ function getProductKleur(request, response) {
   const productkleur_id = parseInt(request.params.pk_id)
   const sqlOpdracht = db.prepare('SELECT * FROM productkleur Join kleur ON kleur.k_id = productkleur.kleur_id WHERE pk_id = ? ORDER BY pk_id')
   data = sqlOpdracht.all(productkleur_id)
-  response.status(200).json(data[0])
+  response.status(200).send(data)
 }
 
 
@@ -82,7 +82,7 @@ function getProducts(request, response) {
 
   const id = parseInt(request.query.category)
   let data = []
-  if (id > 1) {
+  if (id > 0) {
     const sqlOpdracht = db.prepare('SELECT * FROM products JOIN merk ON merk.m_id = products.merk_id JOIN categorie ON categorie.c_id = products.categorie_id WHERE id = ? ORDER BY name ASC')
     data = sqlOpdracht.all(category_id)
   } else {
