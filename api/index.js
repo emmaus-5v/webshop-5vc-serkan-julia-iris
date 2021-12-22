@@ -75,7 +75,7 @@ function getProductKleur(request, response) {
   data = sqlOpdracht.all(productkleur_id)
   response.status(200).send(data)
   console.log(data)
-  console.log('API verstuurt /api/productkleur/:id/?')
+  console.log('API verstuurt /api/Product/Kleur/:id/?')
 }
 
 

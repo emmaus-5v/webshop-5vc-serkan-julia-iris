@@ -99,19 +99,20 @@
         request1.send() 
 
 		var request2 = new XMLHttpRequest()
-        request2.open('GET', '/api/productkleur', true)
+        request2.open('GET', '/api/ProductKleur/:id', true)
         request2.onload = showProductkleuren
         request2.send() 
+		console.log("get productkleur send")
 
 
        })();
 
 	  function showProductKleurById(product_id) {
-		console.log("showProductsByGenre called")
+		console.log("showProductKleurById called")
 		// laad producten
         // de functie showProducts wordt aangeroepen als er antwoord van de API is
         var request3 = new XMLHttpRequest()
-        request3.open('GET', `/api/productsByGenre/${product_id}`, true) 
+        request3.open('GET', `/api/showProductKleurById/${product_id}`, true) 
 		console.log("data aangekomen")
         request3.onload = showProducts 
         request3.send()
