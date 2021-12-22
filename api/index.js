@@ -27,7 +27,7 @@ app.use(express.static('../web'))
 // definieer startpunten voor de API-server
 app.get('/api/echo', echoRequest)
 app.get('/api/categories', getCategories)
-app.get('/api/ProductKleur/:pk_id', getProductKleur)
+app.get('/api/ProductKleur/:id', getProductKleur)
 app.get('/api/products', getProducts)
 app.get('/api/products/:id', getProductById)
 //app.get('/api/products/:id/related', db.getRelatedProductsById)
@@ -67,7 +67,7 @@ function getCategories(request, response) {
 
 
 function getProductKleur(request, response) {
-  console.log('API ontvangt /api/ProductKleur/:pk_id/?', request.query)
+  console.log('API ontvangt /api/ProductKleur/:id/?', request.query)
 
   let data = []
   const productkleur_id = parseInt(request.params.pk_id)
@@ -75,7 +75,7 @@ function getProductKleur(request, response) {
   data = sqlOpdracht.all(productkleur_id)
   response.status(200).send(data)
   console.log(data)
-  console.log('API verstuurt /api/productkleur/:pk_id/?')
+  console.log('API verstuurt /api/productkleur/:id/?')
 }
 
 
