@@ -44,7 +44,7 @@ stap TODO:
 - [x] query aanpassen zodat id's niet meer overlopen dmv AS
 - [ ] winkelwagen aanpassen met id's
 - [x] plaatjes fixen
-- [ ] mail fixen 
+- [x] mail fixen 
 - [X] query kleuren fixen
 - [ ] filters maken
 - [X] kijken of als je op terug klikt de winkelwagen behouden kan worden

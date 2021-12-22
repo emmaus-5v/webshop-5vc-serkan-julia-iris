@@ -212,7 +212,7 @@ function checkoutOrder(request, response) {
 
   // maak inhoud van mailbericht
   var body = `<html><body>Hi<br><br>Bedankt voor uw bestelling bij MusicShop. Uw ordernummer is: <b>${orderId}</b><br>
-  Hieronder nogmaals us gegevens<br><br>\n` +
+  Hieronder nogmaals uw gegevens<br><br>\n` +
     `Naam: ${name || '-'} <br>\n` +
     `Adres: ${adres || '-'} <br>\n` +
     `Postcode: ${postcode || '-'} <br>\n` +
