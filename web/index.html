@@ -148,7 +148,6 @@
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
               clone.querySelector(".product_merk").textContent = product.brand
 			  clone.querySelector(".product_categorie").textContent = product.category
-			  //showKleuren()
               clone.querySelector(".product_id").value = product.id
               clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
               clone.querySelector(".product_image").src =`/images/${product.id}.jpg`
@@ -167,25 +166,29 @@
 	  
       app.appendChild(container)
 
-	  const urlParams = new URLSearchParams(window.location.search);
+	 /* const urlParams = new URLSearchParams(window.location.search);
       const productId = urlParams.get('productId');
 
       var request = new XMLHttpRequest()
       request.open('GET', `/api/products/${productId}`, true)
-	  request.onload = function (){
-		console.log("showProductkleuren1 called")
+	  
+	  request.onload = function showProductKleurById (){ */
+		
 			var data = JSON.parse(this.response) // vertaalt de response van API naar array met kleuren
 			for (let row in data) { // herhaal voor elk product
-				const Color = data[row]
+				console.log("check")
+				const productkleur = data[row]
+				
 				// voeg product toe aan DOM, 
 				// zodat deze zichtbaar wordt op de webpagina	
 				const clone = template.content.cloneNode(true);
-				clone.querySelector(".productkleur_kleur").textContent = Color.color
+				clone.querySelector(".productkleur_kleur").textContent = productkleur.color
 				// hier moet je de property "onSubmit" de juiste waarde geven
 				container.appendChild(clone)
+				
 			}
 	   }	
-	 }	  
+	 //}	  
 	</script>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

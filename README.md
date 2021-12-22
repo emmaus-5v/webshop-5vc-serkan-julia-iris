@@ -13,6 +13,9 @@ of in Gitpod (gitpod is zonder mailen van orders en zonder permanent hosten):
 -  * Julia Suijker*
 -  * Serkan Karan*
 
+# Uitleg voor meneer van Geest:
+De database en api zijn volledig af inclusief de n:m relatie. In de index.html staat een poging om de n:m relatie op de website te zetten helaas werkt deze niet maar ik heb mijn best gedaan.
+
 # Mijn aanpak
 Werk de planning af van boven naar beneden<br>
 Geef aan met [x] welke onderdelen af zijn
@@ -32,7 +35,7 @@ Stap 3: API aanpassen
 - [X] Pas de API aan, zodat je alle informatie uit je database kunt opvragen via de API
 
 Stap 4: Website aanpassen 
-- [ ] Pas de website aan, zodat alle informatie getoond wordt.
+- [x] Pas de website aan, zodat alle informatie getoond wordt. (behalve de n:m relatie)
 
 Stap x: Webshop verder verbeteren
 - [ ] Herhaal stap 2 t/m 4 om je webshop verder te verbeteren. 
