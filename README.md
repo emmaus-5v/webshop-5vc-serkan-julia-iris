@@ -46,7 +46,8 @@ stap TODO:
 - [ ] filters maken
 - [X] kijken of als je op terug klikt de winkelwagen behouden kan worden
 - [X] naam winkel wijzigen?
-- [ ] bedankt voor je bestelling bericht (bestaat, kan pas gecheckt worden of het werkt nadat de mail gefixt is)
+- [x] bedankt voor je bestelling bericht (bestaat, kan pas gecheckt worden of het werkt nadat de mail gefixt is)
+- [X] Bestellingsemail (is gelukt, maar alleen op replit)
 
 Voor en goed cijfer is het belangrijk dat je laat zien dat je uitstekend begrepen hebt hoe je een webshop moet opzetten.
 
