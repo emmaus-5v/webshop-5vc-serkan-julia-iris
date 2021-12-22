@@ -211,7 +211,8 @@ function checkoutOrder(request, response) {
   articleTable += "</table>"
 
   // maak inhoud van mailbericht
-  var body = `<html><body>Hi<br><br>Bedankt voor je bestelling met nummer <b>${orderId}</b><br><br>\n` +
+  var body = `<html><body>Hi<br><br>Bedankt voor uw bestelling bij MusicShop. Uw ordernummer is: <b>${orderId}</b><br>
+  Hieronder nogmaals us gegevens<br><br>\n` +
     `Naam: ${name || '-'} <br>\n` +
     `Adres: ${adres || '-'} <br>\n` +
     `Postcode: ${postcode || '-'} <br>\n` +
@@ -221,7 +222,8 @@ function checkoutOrder(request, response) {
     articleTable +
     //`productIds: ${productIds || '-'}<br>\n` + 
     //`productAmounts: ${productAmounts || '-'}<br>\n` + 
-    `groet,<br><br>\n\nShop Mailer\n</body></html>`
+    `Indien er iets niet klopt bij uw gegevens, stuur alstublieft een mail met uw ordernummer en de verbeterde gegevens naar 112521@emmauscollege.nl. <br>
+    met vriendelijke groet,<br><br>\n\n Iris, Serkan en Julia van MusicShop \n</body></html>`
 
 
   // check mailconfig en verstuur mail
