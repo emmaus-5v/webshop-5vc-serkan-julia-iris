@@ -71,10 +71,11 @@ function getProductKleur(request, response) {
 
   let data = []
   const productkleur_id = parseInt(request.params.pk_id)
-  const sqlOpdracht = db.prepare('SELECT pk_id, products_id, id, kleur_id, k_id, color FROM productkleur Join kleur ON kleur.k_id = productkleur.kleur_id JOIN products ON products.id = productkleur.products_id WHERE pk_id = ? ORDER BY pk_id')
+  const sqlOpdracht = db.prepare('SELECT pk_id, products_id, id, kleur_id, k_id, color FROM productkleur Join kleur ON kleur.k_id = productkleur.kleur_id JOIN products ON products.id = productkleur.products_id WHERE id = ? ORDER BY name ASC')
   data = sqlOpdracht.all(productkleur_id)
   response.status(200).send(data)
- // console.log('API verstuurt /api/productkleur/')
+  console.log(data)
+  console.log('API verstuurt /api/productkleur/:pk_id/?')
 }
 
 
@@ -100,7 +101,7 @@ function getProductById(request, response) {
 
   let data = []
   const product_id = parseInt(request.params.id)
-  const sqlOpdracht = db.prepare('SELECT * FROM products JOIN merk ON merk.m_id = products.merk_id JOIN categorie ON categorie.c_id = products.categorie_id WHERE id = ?')
+  const sqlOpdracht = db.prepare('SELECT * FROM products JOIN merk ON merk.m_id = products.merk_id JOIN categorie ON categorie.c_id = products.categorie_id Join kleur ON kleur.k_id = productkleur.kleur_id JOIN productkleur ON products.id = productkleur.products_id WHERE id = ?')
   data = sqlOpdracht.all(product_id)
   response.status(200).json(data[0])
 }

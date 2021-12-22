@@ -81,9 +81,9 @@
 	<script src="/js/basket.js"></script> <!-- functies voor de winkelwagen -->
 	
   <script> // functies om de producten te laden en tonen op de webpagina
-    
-    // deze functie wordt aangeroepen als de pagina geladen is
-    // deze functie laadt de producten via de API
+     
+     // deze functie wordt aangeroepen als de pagina geladen is
+     // deze functie laadt de producten via de API
 		(function() { 
         // your page initialization code here
         // the DOM will be available here
@@ -93,40 +93,42 @@
 
         // laad producten
         // de functie showProducts wordt aangeroepen als er antwoord van de API is
-        var request = new XMLHttpRequest()
-        request.open('GET', '/api/products', '/api/productkleur/:pk_id', true)
-		
-		
-	
-        request.onload = showProducts 
-        request.send() 
+        var request1 = new XMLHttpRequest()
+        request1.open('GET', '/api/products', true)
+        request1.onload = showProducts 
+        request1.send() 
 
-      })();
+		var request2 = new XMLHttpRequest()
+        request2.open('GET', '/api/productkleur', true)
+        request2.onload = showProductkleuren
+        request2.send() 
 
-	
-	 /* function showKleuren(){
-		console.log("showKleuren called");
-		var data = JSON.parse(this.response)
-		for (let row in data) { // herhaal voor elke product
-         const productkleur = data[row]
-         for (var i = 0, im = productkleur.length; im > i; i++) {
-   			 clone.querySelector(".productkleur_kleur").textContent = productkleur[i];
-		     }
-	    }
+
+       })();
+
+	  function showProductKleurById(product_id) {
+		console.log("showProductsByGenre called")
+		// laad producten
+        // de functie showProducts wordt aangeroepen als er antwoord van de API is
+        var request3 = new XMLHttpRequest()
+        request3.open('GET', `/api/productsByGenre/${product_id}`, true) 
+		console.log("data aangekomen")
+        request3.onload = showProducts 
+        request3.send()
 	  }
-	*/
+	
 
-    // deze functie zet de producten op het scherm
-    // nadat de API is aangeroepen
-    function showProducts() {
-      console.log("showProducts called")
-      const template = document.querySelector('#productcard');
-      const app = document.getElementById('index')
-      
-      const container = document.createElement('div')
-      container.setAttribute('class', 'container row article-container')
+     // deze functie zet de producten op het scherm
+     // nadat de API is aangeroepen
+     function showProducts() {
+		console.log("showProducts called")
+		const template = document.querySelector('#productcard');
+		const app = document.getElementById('index')
+		
+		const container = document.createElement('div')
+		container.setAttribute('class', 'container row article-container')
 
-      app.appendChild(container)
+		app.appendChild(container)
         
             var data = JSON.parse(this.response) // vertaal response van API naar array met producten
             for (let row in data) { // herhaal voor elke product
@@ -152,9 +154,37 @@
               container.appendChild(clone)
             }
 		}
-          
+	    
+	
+	 function showProductkleuren() {
+      console.log("showProductkleuren called")
+      const template = document.querySelector('#productcard'); // template (it must be a template, not any tag) that holds html for one option, this html is cloned for each option
+      const app = document.getElementById('index') // parent in the DOM to which children are added for each genre
+	  	
+      const container = document.createElement('div')
+      container.setAttribute('class', 'container row article-container')
+	  
+      app.appendChild(container)
 
-		  
+	  const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('productId');
+
+      var request = new XMLHttpRequest()
+      request.open('GET', `/api/products/${productId}`, true)
+	  request.onload = function (){
+		console.log("showProductkleuren1 called")
+			var data = JSON.parse(this.response) // vertaalt de response van API naar array met kleuren
+			for (let row in data) { // herhaal voor elk product
+				const Color = data[row]
+				// voeg product toe aan DOM, 
+				// zodat deze zichtbaar wordt op de webpagina	
+				const clone = template.content.cloneNode(true);
+				clone.querySelector(".productkleur_kleur").textContent = Color.color
+				// hier moet je de property "onSubmit" de juiste waarde geven
+				container.appendChild(clone)
+			}
+	   }	
+	 }	  
 	</script>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -166,6 +196,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
-</body>
-
+ </body>
+	 
 </html>
